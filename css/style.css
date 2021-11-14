@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,200;1,300&display=swap');
+
+:root{
+    --purple: purple;
+    --black: #333;
+    --white: #fff;
+    --light-bg: rgb(206, 200, 200);
+    --box-shawdow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-track{
+    background: var(--purple);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--white);
+    border-radius: 50px;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: var(--purple);
+    color: var(--white);
+    font-size: 17px;
+    box-shadow: var(--box-shawdow);
+}
+.btn:hover{
+    background: var(--black);
+}
+
+.container{
+    padding: 100px 9%;
+    background: linear-gradient(45deg, purple, var(--black));
+    display: flex;
+}
+.container .profile{
+    flex: 1 1 400px;
+    background: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 20px; left: 0;
+    border-right: 1px solid var(--black);
+}
+.container .profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.container .profile h3{
+    color: var(--black);
+    font-size: 20px;
+}
+.container .profile p{
+    color: var(--purple);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.container .profile .share{
+    margin: 10px 0;
+}
+.container .profile .share a{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: var(--black);
+    background: var(--light-bg);
+}
+.container .profile .share a:hover{
+    background: var(--purple);
+    color: var(--white);
+    box-shadow: var(--box-shawdow);
+}
+.container .information{
+    flex: 1 1 1000px;
+    background: var(--white);
+}
