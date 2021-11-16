@@ -4,6 +4,7 @@
     --purple: purple;
     --black: #333;
     --white: #fff;
+    --light-color: #777;
     --light-bg: rgb(206, 200, 200);
     --box-shawdow:0 5px 10px rgba(0,0,0,.1);
 }
@@ -27,7 +28,11 @@ html::-webkit-scrollbar-thumb{
     background: var(--white);
     border-radius: 50px;
 }
-
+.title{
+    font-size: 25px;
+    color: var(--purple);
+    margin-bottom: 15px;
+}
 .btn{
     margin-top: 10px;
     display: inline-block;
@@ -54,7 +59,8 @@ html::-webkit-scrollbar-thumb{
     text-align: center;
     position: sticky;
     top: 20px; left: 0;
-    border-right: 1px solid var(--black);
+    border-right: 3px solid var(--light-bg);
+    align-self: flex-start;
 }
 .container .profile img{
     height: 150px;
@@ -94,4 +100,115 @@ html::-webkit-scrollbar-thumb{
 .container .information{
     flex: 1 1 1000px;
     background: var(--white);
+    padding: 30px 20px;
 }
+.container .information .about p{
+    font-size: 17px;
+    line-height: 2;
+    padding: 5px 0;
+    color:var(--light-color)
+}
+.container .information .about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container .information .about .box-container .box{
+    flex: 1 1 250px;
+}
+.container .information .about .box-container .box h3{
+    font-size: 15px;
+    padding: 10px 0;
+    color: var(--black);
+}
+.container .information .about .box-container .box h3 span{
+    color: var(--light-color);
+}
+.container .information .services{
+    padding: 20px 0;
+}
+.container .information .services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container .information .services .box-container .box{
+    flex: 1 1 17px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: var(--light-bg);
+}
+.container .information .services .box-container .box img{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.container .information .services .box-container .box h3{
+    font-size: 15px;
+    color: var(--light-color);
+}
+.container .information .skills .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container .information .skills .box-container .box{
+    flex: 1 1 300px;
+}
+.container .information .skills .box-container .box .progress h3{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--black);
+    font-size: 15px;
+}
+.container .information .skills .box-container .box .progress h3 span{
+    color: var(--light-color);
+}
+.container .information .skills .box-container .box .progress .bar{
+    overflow: hidden;
+    border-radius: 50px;
+    height: 10px;
+    background: var(--light-bg);
+}
+.container .information .skills .box-container .box .progress .bar span{
+   background: var(--purple);
+   height: 100%;
+   display: block;
+   border-radius: 50px;
+}
+.container .information .skills .box-container .box:first-child .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.container .information .skills .box-container .box:first-child .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+.container .information .skills .box-container .box:first-child .progress:nth-child(3) .bar span{
+    width: 75%;
+}
+.container .information .skills .box-container .box:first-child .progress:nth-child(4) .bar span{
+    width: 70%;
+}
+.container .information .skills .box-container .box:first-child .progress:nth-child(5) .bar span{
+    width: 65%;
+}
+.container .information .skills .box-container .box:first-child .progress:nth-child(6) .bar span{
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
