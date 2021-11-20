@@ -200,14 +200,17 @@ html::-webkit-scrollbar-thumb{
     margin: 20px 0;
 }
 .container .information .experience .box-container{
-    display: flex;
+    /* display: grid;
     flex: wrap;
-    gap: 15px;
+    gap: 15px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 1em;
 }
 .container .information .experience .box-container .box{
     padding: 20px;
     border-radius: 5px;
-    flex: 1 1 350px;
+    flex:1 1 350px;
     background: var(--light-bg);
 }
 .container .information .experience .box-container .box span{
