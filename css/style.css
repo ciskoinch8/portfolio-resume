@@ -5,7 +5,7 @@
     --black: #333;
     --white: #fff;
     --light-color: #777;
-    --light-bg: rgb(206, 200, 200);
+    --light-bg: rgb(238, 231, 231);
     --box-shawdow:0 5px 10px rgba(0,0,0,.1);
 }
 
@@ -200,12 +200,12 @@ html::-webkit-scrollbar-thumb{
     margin: 20px 0;
 }
 .container .information .experience .box-container{
-    /* display: grid;
-    flex: wrap;
-    gap: 15px; */
     display: grid;
+    flex: wrap;
+    gap: 15px;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 1em;
+    gap: 15px 1em; */
 }
 .container .information .experience .box-container .box{
     padding: 20px;
@@ -228,12 +228,78 @@ html::-webkit-scrollbar-thumb{
     font-size: 14px;
 }
 
+.container .information .contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+.container .information .contact .box-container .box{
+    flex: 1 1 200px;
+    display: flex;
+    align-self: flex-start;
+    gap: 10px;
+}
+.container .information .contact .box-container .box i{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: var(--purple);
+    color: var(--white);
+    text-align: center;
+}
+.container .information .contact .box-container .box h3{
+    font-size: 17px;
+    color: var(--black);
+    padding-bottom: 5px;
+}
+.container .information .contact .box-container .box p{
+    font-size: 14px;
+    color: var(--light-color);
+    line-height: 2;
+}
 
 
+@media (max-width:1200px){
+    .container{
+        flex-flow: column;
+        padding: 20px;
+        justify-content: center;
+    }
+    .container .profile{
+        position: static;
+        border-radius: 5px;
+        box-shadow: var(--box-shawdow);
+        padding: 20px;
+        border-right: none;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .container .information{
+        border-radius: 5px;
+        box-shadow: var(--box-shawdow);
+        padding: 20px;
+    }
+}
 
-
-
-
+@media (max-width:450px){
+    .container .profile{
+        width: 100%;
+    }
+    .container .profile .btn{
+        width: 100%;
+    }
+    .container .information .about p{
+        font-size: 12px;
+    }
+    .container .information .experience .box-container .box p{
+        font-size: 12px;
+    }
+    .container .information .services .box-container .box{
+        width: 100%;
+    }
+}
 
 
 
